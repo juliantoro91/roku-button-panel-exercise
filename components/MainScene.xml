@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--********** By juliantoro91.  More info: https://github.com/juliantoro91 **********-->
+
+<component name="MainScene" extends="Scene">
+    <script type="text/brightscript" uri="MainScene.brs" />
+
+    <interface>
+    </interface>
+
+    <children>
+        <Rectangle
+            width="1920"
+            height="1080"
+            color="#101214" />
+    </children>
+</component>

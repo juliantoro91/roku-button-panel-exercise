@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--********** By juliantoro91.  More info: https://github.com/juliantoro91 **********-->
+
+<component name="ScreenWithButtons" extends="Group">
+    <script type="text/brightscript" uri="ScreenWithButtons.brs"/>
+
+    <interface>
+    <field id="selectedOption" type="String" alwaysNotify="true" onChange="onOptionSelected" />
+    </interface>
+    <children>
+        <Rectangle
+            id="background"
+            width="1920"
+            height="1080"
+            color="#ffffff"/>
+        <Poster
+            id="backgroundPoster" />
+        <Poster
+            id="poster"
+            translation="[0, 0]"
+            width="1920"
+            height="1080"
+            opacity="1.0"
+            uri="pkg:/images/mask.png"/>
+
+        <Label
+            id="screenTitle"
+            translation="[120, 180]"
+            horizAlign="left"
+            color="#D8DADC"
+            width="900"
+            wrap="true"
+            vertAlign="left"
+            font="font:LargeBoldSystemFont">
+        </Label>
+
+        <LayoutGroup
+            id="buttonPanel"
+            translation="[120, 436]"
+            layoutDirection="horiz"
+            itemSpacings="[24]"/>
+
+        <Label
+            id="titleLabel"
+            translation="[120, 571]"
+            horizAlign="left"
+            color="#D8DADC"
+            font="font:MediumBoldSystemFont">
+        </Label>
+
+        <RowList
+            id="rowList"
+            itemComponentName="RowListItem"
+            translation="[120, 636]"
+            numRows="1"
+            itemSize="[1920, 330]"
+            rowItemSize="[[480, 270]]"
+            itemSpacing="[0, 40]"
+            rowItemSpacing="[[24, 0]]"
+            showRowLabel="[false]"
+            drawFocusFeedback="false"
+            vertFocusAnimationStyle="fixedFocusWrap"
+            rowFocusAnimationStyle="floatingFocus"
+            visible="true" />
+
+        <Button
+            id="topButton"
+            minWidth="320"
+            maxWidth="320"
+            height="64"
+            focusBitmapUri="pkg:/images/Button.png"
+            focusFootprintBitmapUri="pkg:/images/Button-Unfocused.png"
+            focusedIconUri=""
+            iconUri=""
+            translation="[1550, 64]"
+            text="Change mode"
+            textColor="#5b6671"
+            focusedTextColor="#D8DADC"
+            showFocusFootprint="true"
+            textFont="font:SmallBoldSystemFont"
+            focusedTextFont="font:SmallBoldSystemFont" >
+        </Button>
+    </children>
+</component>

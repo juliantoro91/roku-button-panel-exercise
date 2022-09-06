@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+
+<!--********** By juliantoro91.  More info: https://github.com/juliantoro91 **********-->
+
+<component name = "RowListItem" extends = "Group" >
+
+  <interface >
+    <field id = "itemContent" type = "node" onChange = "showcontent"/>
+  </interface>
+
+   <script type="text/brightscript" uri="RowListItem.brs"/>
+
+  <children >
+
+    <Poster
+      id = "itemPoster"
+      translation = "[ 10, 10 ]"
+      width = "480"
+      height = "270"
+      scaleRotateCenter = "[ 256.0, 144.0 ]" />
+
+  </children>
+
+</component>
